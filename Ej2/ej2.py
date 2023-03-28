@@ -16,3 +16,10 @@ num = int(args[2])
 
 # Imprimir la repetición de la cadena de texto
 print(text * num)
+
+
+'''
+python3 ej2.py hola 20       ░▒▓ ✔ 
+holaholaholaholaholaholaholaholaholaholaholaholaholaholaholaholaholaholaholahola
+
+'''
