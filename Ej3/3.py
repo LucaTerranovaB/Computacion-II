@@ -1,3 +1,5 @@
+#!/usr/bin/ python3
+
 import sys
 import argparse
 
@@ -6,10 +8,12 @@ parser = argparse.ArgumentParser(description='Contar palabras y líneas en un ar
 parser.add_argument('archivo', help='el archivo de texto a analizar')
 parser.add_argument('-a', '--avg-length', action='store_true', help='imprimir la longitud promedio de las palabras')
 args = parser.parse_args()
+archivo = "/home/b/Documentos/GitHub/Computacion-II/Ej3/archivo.txt"
+archivo = args.archivo
 
 # Abrir el archivo
 try:
-    with open(args.archivo, 'r') as f:
+    with open(archivo, 'r') as f:
         # Leer el archivo línea por línea
         num_lineas = 0
         num_palabras = 0

@@ -1,3 +1,5 @@
+#!/usr/bin/ python3
+
 import sys
 
 # Obtener los argumentos de línea de comando
