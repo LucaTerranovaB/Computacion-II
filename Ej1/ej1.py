@@ -2,6 +2,16 @@
 
 #!/bin/bash python3 
 
+import argparse
+import sys
+
+parser = argparse.ArgumentParser(description='Genera una lista de los n primeros números impares.')
+parser.add_argument('n', help='número entero positivo')
+args = parser.parse_args()
+
+    
+
+
 def odd_numbers(n):
     """Generates a list of the first n odd numbers"""
     return [i for i in range(n*2) if i % 2 != 0]
