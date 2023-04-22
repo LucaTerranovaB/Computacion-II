@@ -1,4 +1,6 @@
 import os
+import subprocess 
+ 
 
 # Crear el pipe
 r, w = os.pipe()
@@ -31,8 +33,10 @@ else:
     # Cerrar el extremo de lectura del pipe
     os.close(r)
     
+    
+    
     # Abrir el archivo de texto
-    with open("archivo.txt", "r") as f:
+    with open("IGNORAR-PRACTICAS\\subprocess\\archivo.txt", "w") as f:
         # Leer cada línea del archivo
         for line in f:
             # Escribir la línea en el pipe
@@ -40,3 +44,4 @@ else:
     
     # Cerrar el extremo de escritura del pipe
     os.close(w)
+

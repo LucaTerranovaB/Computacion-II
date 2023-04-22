@@ -55,7 +55,7 @@ for i in range(2):
     os.close(pipes[i][0])
 
 # Abrir el archivo de texto
-with open("archivo.txt", "r") as f:
+with open("./archivo.txt", "w+") as f:
     # Leer cada línea del archivo
     for line in f:
         # Escribir la línea en cada pipe
